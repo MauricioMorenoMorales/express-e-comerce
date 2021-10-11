@@ -1,4 +1,16 @@
-@host = http://localhost:3000/
+@host = http://localhost:3000
 
 ###
 GET {{host}}
+
+###
+GET {{host}}/products?size=2
+
+###
+GET {{host}}/nueva-ruta
+
+### parametros
+GET {{host}}/categories/123/products/sadfokms3
+
+### Parametros query
+GET {{host}}/users?limit=10&offset=200
