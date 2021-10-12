@@ -1,0 +1,28 @@
+@host = http://localhost:3000/api/v1/products
+
+###
+POST {{host}}
+Content-Type: application/json
+
+{
+	"name": "example",
+	"number": "something"
+}
+
+###
+PATCH {{host}}/12
+Content-Type: application/json
+
+{
+	"name": "example",
+	"number": "something"
+}
+
+###
+DELETE {{host}}/12
+
+###
+GET {{host}}
+
+###
+GET {{host}}/72c74bd4-826c-4777-9a07-b2537eebabbe
